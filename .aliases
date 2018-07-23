@@ -1,0 +1,2 @@
+alias h='history'
+alias tr='tree -L 2 -D'
