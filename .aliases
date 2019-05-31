@@ -4,3 +4,6 @@ alias tr='tree -L 2 -h'
 alias update='sudo apt update -y'
 alias upgrade='sudo apt upgrade -y'
 alias autoremove='sudo apt autoremove -y'
+alias dps='docker ps --all'
+alias di='docker images --all'
+
