@@ -6,6 +6,7 @@ alias upgrade='sudo apt upgrade -y'
 alias autoremove='sudo apt autoremove -y'
 alias dps='docker ps --all'
 alias di='docker images --all'
+alias de='docker exec'
 alias x='exit'
 alias c='clear'
 
