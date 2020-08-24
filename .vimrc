@@ -12,6 +12,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'morhetz/gruvbox'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call vundle#end()
 
 filetype plugin indent on
@@ -61,3 +63,6 @@ nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 nmap <leader>gs :G<CR>
 map <F3> :NERDTreeToggle<CR>
+
+au! BufNewFile,BufRead *.svelte set ft=html
+

@@ -9,4 +9,7 @@ alias di='docker images --all'
 alias de='docker exec'
 alias x='exit'
 alias c='clear'
+alias gcproxy='sudo ssh -F ~acatejr/.ssh/config gcproxy'
+alias cb='chromium-browser --proxy-server=socks://localhost:19999 > /dev/null 2>&1 &'
+alias uagcws='ssh uagcws'
 
