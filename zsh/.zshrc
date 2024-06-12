@@ -124,3 +124,6 @@ export NVM_DIR="$HOME/.nvm"
 # export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH=$PATH:/usr/local/go/bin
+
+export FLYCTL_INSTALL="/home/acate/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
