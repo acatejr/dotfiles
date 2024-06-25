@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker)
+plugins=(git docker asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,10 +112,6 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.aliases
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # bun completions
 # [ -s "/home/acatejr/.local/share/reflex/bun/_bun" ] && source "/home/acatejr/.local/share/reflex/bun/_bun"
 
@@ -124,6 +120,7 @@ export NVM_DIR="$HOME/.nvm"
 # export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH=$PATH:/usr/local/go/bin
-
 export FLYCTL_INSTALL="/home/acate/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+eval "$(direnv hook zsh)"
