@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker asdf)
+plugins=(git docker asdf) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,9 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# export PYENV_ROOT="$HOME/.pyenv"
-# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -111,13 +108,6 @@ export NVM_DIR="$HOME/.nvm"
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 source ~/.aliases
-
-# bun completions
-# [ -s "/home/acatejr/.local/share/reflex/bun/_bun" ] && source "/home/acatejr/.local/share/reflex/bun/_bun"
-
-# bun
-# export BUN_INSTALL="$HOME/.local/share/reflex/bun"
-# export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH=$PATH:/usr/local/go/bin
 export FLYCTL_INSTALL="/home/acate/.fly"
