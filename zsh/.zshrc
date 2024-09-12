@@ -105,7 +105,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Only load Liquidprompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+[[ $- = *i* ]] && source ~/.liquidprompt/liquidprompt
 
 source ~/.aliases
 
