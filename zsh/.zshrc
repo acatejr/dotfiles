@@ -131,3 +131,5 @@ function tat {
      tmux new-session -s "$name"
    fi
 }
+
+. "$HOME/.local/bin/env"
