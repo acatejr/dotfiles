@@ -25,3 +25,4 @@ alias gpom='git push origin main'
 alias chwn='sudo chown -R $USER:$USER .'
 alias tree='tree -L 2'
 alias hbc="brew update && brew upgrade && brew cleanup"
+alias s="source"
