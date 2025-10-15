@@ -135,3 +135,6 @@ function tat {
 . "$HOME/.local/bin/env"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
