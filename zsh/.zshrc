@@ -110,8 +110,8 @@ export NVM_DIR="$HOME/.nvm"
 source ~/.aliases
 
 export PATH=$PATH:/usr/local/go/bin
-export FLYCTL_INSTALL="/home/acate/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
+# export FLYCTL_INSTALL="/home/acate/.fly"
+# export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 eval "$(direnv hook zsh)"
 
