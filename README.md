@@ -1,5 +1,7 @@
 # dotfiles
 
+System config files.
+
 Resourses
 ---------
 [Atlassian example using yadm](https://www.atlassian.com/git/tutorials/dotfiles)  
