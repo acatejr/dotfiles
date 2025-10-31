@@ -26,3 +26,4 @@ alias chwn='sudo chown -R $USER:$USER .'
 alias tree='tree -L 2'
 alias hbc="brew update && brew upgrade && brew cleanup"
 alias s="source"
+alias h="history"
