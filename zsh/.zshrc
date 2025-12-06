@@ -132,8 +132,6 @@ function tat {
    fi
 }
 
-. "$HOME/.local/bin/env"
-
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/acatejr/.docker/completions $fpath)
 autoload -Uz compinit
@@ -175,3 +173,11 @@ yt() {
     local video_link="$1"
     fabric -y "$video_link" $transcript_flag
 }
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# append completions to fpath
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
