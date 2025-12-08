@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker history asdf) 
+plugins=(git docker history asdf docker-compose) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -175,3 +175,4 @@ yt() {
     local video_link="$1"
     fabric -y "$video_link" $transcript_flag
 }
+
