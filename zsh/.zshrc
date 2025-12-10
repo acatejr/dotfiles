@@ -141,11 +141,6 @@ compinit
 # export SSH_AUTH_SOCK=/Users/acatejr/.bitwarden-ssh-agent.sock
 #
 
-# Golang environment variables
-export GOROOT=$(brew --prefix go)/libexec
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
-
 # Loop through all files in the ~/.config/fabric/patterns directory
 for pattern_file in $HOME/.config/fabric/patterns/*; do
     # Get the base name of the file (i.e., remove the directory path)
@@ -181,3 +176,8 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
+
+# Golang environment variables
+export GOROOT=$(brew --prefix go)/libexec
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
